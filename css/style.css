@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: arial;
+}
+p{
+    margin: 15px ;
+}
+
+/* Navbar */
+.navbar{
+    width: 100%;
+    background-color: rgb(221, 64, 64);
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.navbar img{
+    width: 200px;
+}
+.navbar.fixed{
+position: fixed;
+top: 0;
+left: 0;
+background-color: rgb(221, 64, 64);
+animation-name: menuFixed;
+transform: translateY(-100%);
+animation-duration: 0.1ms;
+animation-fill-mode: forwards;
+}
+@keyframes menuFixed {
+    0%{
+    transform: translateY(-100%);
+    }
+    100%{
+    transform: translateY(0%);
+    }
+}
+
+/* Navbar ends */
